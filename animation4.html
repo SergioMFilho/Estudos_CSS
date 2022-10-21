@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .quadrado {
+        position: relative;
+        background: red;
+        width: 100px;
+            height: 100px;
+        animation: go-back 5s infinite;
+        }
+
+        @keyframes go-back {
+         0%  {
+           left: 0;
+           top: 0;
+        }
+        25% {
+            left: 600px;
+            top: 0;
+        }
+        50% {
+            left: 600px;
+            top: 600px;
+        }
+        75% {
+            left: 0px;
+            top: 600px; 
+        }
+        100% {
+            left: 0;
+            top: 0;
+        }
+
+        }
+    </style>
+    </head>
+    <body>
+        <div class="quadrado"></div>
+    </body>
+    </html>

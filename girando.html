@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .spinner {
+	border: 5px solid #DCDCDC;
+	border-left-color: #00CC99;
+	border-radius: 100%;
+	height: 50px;
+	width: 50px;
+    }
+
+    @keyframes loading {
+        0% {
+            transform: rotate(0);
+        }
+        100% {
+            transform: rotate(-360deg);
+        }
+    }
+
+    .spinner.is-animating {
+        animation: loading 2s linear infinite;
+    }
+    </style>
+</head>
+<body>
+    <div class="spinner is-animating"></div>
+</body>
+</html>
